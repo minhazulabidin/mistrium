@@ -40,8 +40,8 @@ const Header = () => {
         <header className='mt-5'>
             <nav>
                 <Container>
-                    <div className='flex justify-between items-center'>
-                        <img src={logo} alt="" />
+                    <Flex className='flex justify-between items-center'>
+                        <img className='cursor-pointer' src={logo} alt="" />
                         <ul className='flex gap-10'>
                             {
                                 navItems.map((item) => <li
@@ -53,13 +53,13 @@ const Header = () => {
                             }
                         </ul>
                         <div className='flex gap-5 text-2xl'>
-                            <CiSearch />
+                            <CiSearch className='cursor-pointer'/>
                             <div className='after:content-[""] after:w-[10px] after:h-[10px] after:bg-red-500 relative after:absolute after:top-[-8px] after:right-[-5px] after:rounded-full'>
-                                <RiDeleteBin6Line />
+                                <RiDeleteBin6Line className='cursor-pointer' />
                             </div>
-                            <AiOutlineUser />
+                            <AiOutlineUser className='cursor-pointer' />
                         </div>
-                    </div>
+                    </Flex>
                 </Container>
             </nav>
 
