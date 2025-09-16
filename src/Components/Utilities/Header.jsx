@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from './Container'
 import logo from '/public/Logo.png'
 import { CiSearch } from 'react-icons/ci'
@@ -40,12 +39,12 @@ const Header = () => {
         <header className='mt-5'>
             <nav>
                 <Container>
-                    <Flex className='flex justify-between items-center'>
+                    <Flex className='flex-item'>
                         <img className='cursor-pointer' src={logo} alt="" />
                         <ul className='flex gap-10'>
                             {
                                 navItems.map((item) => <li
-                                    className='relative after:absolute after:h-[2px] after:w-0 after:bg-black after:bottom-0 after:left-0 hover:after:w-full after:transition-all font-gupter text-[17px] font-bold leading-[100%] tracking-[2%] pb-[6px]'
+                                    className='nav-item'
                                     key={item?.id}
                                 >
                                     <a href={item?.href}>{item?.name}</a>
@@ -54,7 +53,7 @@ const Header = () => {
                         </ul>
                         <div className='flex gap-5 text-2xl'>
                             <CiSearch className='cursor-pointer' />
-                            <div className='after:content-[""] after:w-[10px] after:h-[10px] after:bg-[#FE0303] relative after:absolute after:top-[-8px] after:right-[-5px] after:rounded-full'>
+                            <div className='icon-after'>
                                 <RiDeleteBin6Line className='cursor-pointer' />
                             </div>
                             <AiOutlineUser className='cursor-pointer' />

@@ -11,3 +11,18 @@
 .button {
     @apply outline-none bg-primary px-[70px] py-[30px] text-white hover:border-2 hover:bg-white hover:border-primary hover:text-primary font-bold hover:transition-all border-2;
 }
+.nav-item{
+    @apply relative after:absolute after:h-[2px] after:w-0 after:bg-black after:bottom-0 after:left-0 hover:after:w-full after:transition-all font-gupter text-[17px] font-bold leading-[100%] tracking-[2%] pb-[6px];
+}
+.icon-after{
+    @apply after:content-[""] after:w-[10px] after:h-[10px] after:bg-[#FE0303] relative after:absolute after:top-[-8px] after:right-[-5px] after:rounded-full;
+}
+.flex-item{
+    @apply justify-between items-center;
+}
+.h1{
+    @apply font-habibi text-[65px] font-normal leading-[76px] tracking-[2%];
+}
+.p{
+    @apply text-xl font-habibi font-normal leading-[28px] tracking-[2%] max-w-[471px];
+}
