@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Habibi&display=swap');
+
+@theme {
+    --font-gupter: "Gupter", serif;
+    --font-habibi: "Habibi", serif;
+    --color-primary: #C4A586;
+    --color-secondary: #72696A
+}
+
+.button {
+    @apply outline-none bg-primary px-[70px] py-[30px] text-white hover:border-2 hover:bg-white hover:border-primary hover:text-primary font-bold hover:transition-all border-2;
+}
