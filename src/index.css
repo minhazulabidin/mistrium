@@ -11,21 +11,47 @@
 .button {
     @apply outline-none bg-primary px-[70px] py-[30px] text-white hover:border-2 hover:bg-white hover:border-primary hover:text-primary font-bold hover:transition-all border-2;
 }
-.nav-item{
+
+.nav-item {
     @apply relative after:absolute after:h-[2px] after:w-0 after:bg-black after:bottom-0 after:left-0 hover:after:w-full after:transition-all font-gupter text-[17px] font-bold leading-[100%] tracking-[2%] pb-[6px];
 }
-.icon-after{
+
+.icon-after {
     @apply after:content-[""] after:w-[10px] after:h-[10px] after:bg-[#FE0303] relative after:absolute after:top-[-8px] after:right-[-5px] after:rounded-full;
 }
-.flex-item{
+
+.flex-item {
     @apply justify-between items-center;
 }
-.h1{
+
+.h1 {
     @apply font-habibi text-[65px] font-normal leading-[76px] tracking-[2%];
 }
-.p{
+
+.p {
     @apply text-xl font-habibi font-normal leading-[28px] tracking-[2%] max-w-[471px];
 }
-.text-typography{
-    @apply font-gupter font-bold leading-[100%] tracking-[2%];
+
+.text-typography {
+    @apply font-gupter font-semibold leading-[100%] tracking-[2%];
+}
+
+.card-body {
+    @apply flex-col bg-[#C4A586A1] items-center relative px-[90px] pb-[120px] pt-[80px]
+}
+
+.card-title {
+    @apply font-habibi text-[22px] leading-[76px] self-start;
+}
+
+.card-price {
+    @apply gap-10 flex font-gupter font-bold text-lg;
+}
+
+.card-button {
+    @apply bg-[#D1A070] rounded-3xl py-[22px] px-[35px] flex items-center gap-3 text-base;
+}
+
+.card-img {
+    @apply w-3/5 absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-2/6 h-[400px]
 }
