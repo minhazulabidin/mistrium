@@ -26,3 +26,6 @@
 .p{
     @apply text-xl font-habibi font-normal leading-[28px] tracking-[2%] max-w-[471px];
 }
+.text-typography{
+    @apply font-gupter font-bold leading-[100%] tracking-[2%];
+}
