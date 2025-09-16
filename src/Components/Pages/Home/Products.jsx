@@ -64,7 +64,7 @@ const Products = () => {
                 </ul>
             </Flex>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-[46px]">
                 {
                     products.map((product) => <Card key={product?.id} product={product}/>)
                 }
