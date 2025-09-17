@@ -1,19 +1,20 @@
 import { FaArrowRightLong } from "react-icons/fa6"
 import Container from "../../Utilities/Container"
 import newspic from "../../../assets/newspic.png"
+import graySofa from "../../../assets/greySofa.png"
 import Flex from "../../Utilities/Flex"
 
 
 const News = () => {
   return (
-    <Container className="mt-[95px] mb-96">
+    <Container className="mt-[95px]">
       <div className="grid grid-cols-4 gap-[30px]">
-        <div className="col-span-2 space-y-9">
+        <div className="col-span-2 space-y-9 justify-end">
           <button className="py-4 px-10 border border-primary rounded-4xl">See Your Interior Design</button>
           <h3 className="font-gupter font-bold text-3xl tracking-[2%] w-[349px]">
             Sign up fo the notification for add a new product’s
           </h3>
-          <div class="flex rounded-[13px] overflow-hidden relative">
+          <div class="flex rounded-[13px] overflow-hidden relative self-end">
             <input type="email"
               placeholder="Your Business Email"
               className="px-4 py-4 text-sm outline-none bg-[#D9D9D982] w-4/5 rounded-[13px]"
@@ -33,9 +34,9 @@ const News = () => {
             <h2 className="flex gap-3 items-center font-gupter text-xl">WAtch Video’s <FaArrowRightLong /></h2>
           </Flex>
         </div>
-        <div className="col-span-1 border">
-          <img src="" alt="" />
-        </div>
+        <Flex className="col-span-1 justify-end">
+          <img src={graySofa} alt="" />
+        </Flex>
       </div>
     </Container>
   )
