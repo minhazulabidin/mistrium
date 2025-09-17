@@ -54,7 +54,7 @@ const Carousel = () => {
         <img
           src={testimonials[activeIndex].image}
           alt=""
-          className="w-[477px] h-[615px] border border-blue-300"
+          className="w-[477px] h-[615px]"
         />
         <div className="flex gap-2 mt-4">
           {testimonials.map((t, idx) => (
@@ -62,7 +62,7 @@ const Carousel = () => {
               key={idx}
               src={t.image}
               alt=""
-              className={`w-16 h-16 cursor-pointer border ${idx === activeIndex ? "border-gray-500" : "border-gray-200"
+              className={`w-16 h-16 object-cover cursor-pointer border ${idx === activeIndex ? "border-gray-500" : "border-gray-200"
                 }`}
               onClick={() => setActiveIndex(idx)}
             />
