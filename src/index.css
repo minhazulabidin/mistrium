@@ -55,3 +55,6 @@
 .card-img {
     @apply w-3/5 absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-2/6 h-[400px]
 }
+.carousel-btn{
+    @apply p-2 border rounded-full hover:bg-primary hover:text-white cursor-pointer transition-all;
+}

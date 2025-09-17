@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import person1 from "../../assets/person1.jpg";
 import person2 from "../../assets/person2.png";
@@ -92,7 +92,7 @@ const Carousel = () => {
           <Flex className="mt-6 justify-end items-end h-[120px]">
             <div className="space-x-4">
               <button
-                className="p-2 border rounded-full hover:bg-primary hover:text-white cursor-pointer transition-all"
+                className="carousel-btn"
                 onClick={() =>
                   setActiveIndex(
                     activeIndex === 0 ? testimonials.length - 1 : activeIndex - 1
@@ -102,7 +102,7 @@ const Carousel = () => {
                 <FaArrowLeft />
               </button>
               <button
-                className="p-2 border rounded-full hover:bg-primary hover:text-white cursor-pointer transition-all"
+                className="carousel-btn"
                 onClick={() =>
                   setActiveIndex(
                     activeIndex === testimonials.length - 1 ? 0 : activeIndex + 1
