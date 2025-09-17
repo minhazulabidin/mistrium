@@ -4,6 +4,8 @@ import Collection from './Collection'
 import Products from './Products'
 import Carousel from '../../Utilities/Carousel'
 import News from './News'
+import Footer from '../../Utilities/Footer'
+
 
 const Home = () => {
   return (
@@ -11,9 +13,10 @@ const Home = () => {
       <Banner />
       <TrustedClint />
       <Collection />
-      <Products/>
-      <Carousel/>
-      <News/>
+      <Products />
+      <Carousel />
+      <News />
+      <Footer/>
     </div>
   )
 }

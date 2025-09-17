@@ -20,7 +20,7 @@ const News = () => {
               className="px-4 py-4 text-sm outline-none bg-[#D9D9D982] w-4/5 rounded-[13px]"
               required />
             <button type="submit"
-              className="flex items-center bg-[#c7a57b] text-white text-sm px-5 py-3 transition-all duration-300 hover:-translate-x-1 group rounded-[13px] absolute right-[128px] top-1">
+              className="flex items-center bg-[#c7a57b] text-white text-sm px-5 py-3 transition-all duration-300 hover:-translate-x-1 group rounded-[13px] absolute right-[128px] top-1 cursor-pointer">
               Get Started
               <span class="inline-block max-w-0 overflow-hidden transition-all duration-300 group-hover:max-w-[20px] group-hover:ml-2">
                 <FaArrowRightLong />
