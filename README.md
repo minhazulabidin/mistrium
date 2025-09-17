@@ -1,4 +1,4 @@
-# Mistrium ['https://mis-trium.netlify.app/']
+## [Mistrium](https://mis-trium.netlify.app/)
 
 Mistrium is a modern, responsive web application designed as an e-commerce or product showcase site, specializing in furniture or home decor. It provides an aesthetically pleasing and user-friendly interface to display various product categories, collections, news, and client testimonials. Built with a focus on modularity and performance, Mistrium offers a seamless browsing experience across devices.
 
