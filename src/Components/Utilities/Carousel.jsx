@@ -5,6 +5,7 @@ import person2 from "../../assets/person2.png";
 import person3 from "../../assets/person3.jpg";
 import person4 from "../../assets/person4.jpg";
 import Container from "./Container";
+import Flex from "./Flex";
 
 const testimonials = [
   {
@@ -12,108 +13,108 @@ const testimonials = [
     date: "08 August 2022",
     rating: 5,
     image: person1,
-    text: "Graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+    text: "Graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful",
   },
   {
     name: "Jane Doe",
     date: "10 August 2022",
     rating: 4,
     image: person2,
-    text: "Another testimonial text here that explains what the customer thought about our service.",
+    text: "Graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a doce without relying on meaningful content.",
   },
   {
     name: "Anna Smith",
     date: "12 August 2022",
     rating: 5,
     image: person3,
-    text: "More testimonial text to show the satisfaction of our clients with our work.",
+    text: "Graphic design, Lorem ipsum is a placeholder text commonly used to demonstment or a typeface without relying on meaningful content.",
   },
   {
     name: "Anna Smith",
     date: "12 August 2022",
     rating: 5,
     image: person4,
-    text: "Another satisfied customer testimonial goes here to enhance trust.",
+    text: "Graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface ",
   },
 ];
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Auto-slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
-    }, 3000); // 3 seconds
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <Container className="flex gap-8 items-center w-full">
-      {/* Left: Large Image */}
+    <Container className="flex gap-[108px] w-full">
       <div className="flex flex-col items-center">
         <img
           src={testimonials[activeIndex].image}
           alt=""
-          className="w-full h-auto border border-blue-300"
+          className="w-[477px] h-[615px] border border-blue-300"
         />
-        {/* Thumbnails */}
         <div className="flex gap-2 mt-4">
           {testimonials.map((t, idx) => (
             <img
               key={idx}
               src={t.image}
               alt=""
-              className={`w-16 h-16 cursor-pointer border ${
-                idx === activeIndex ? "border-blue-500" : "border-gray-200"
-              }`}
+              className={`w-16 h-16 cursor-pointer border ${idx === activeIndex ? "border-gray-500" : "border-gray-200"
+                }`}
               onClick={() => setActiveIndex(idx)}
             />
           ))}
         </div>
       </div>
 
-      {/* Right: Testimonial */}
-      <div className="flex-1 flex flex-col justify-center">
-        <h2 className="text-2xl font-semibold mb-4">
-          Let's See What Our Customer Say
-        </h2>
-        <p className="mb-6 text-gray-700">{testimonials[activeIndex].text}</p>
+      <Flex className="flex-1 flex-col justify-between items-center mt-[71px]">
+        <div className="h-full">
+          <h2 className="text-[55px] text-typography mb-[34px]">
+            Let's See What Our Customer Say
+          </h2>
+          <p className="text-xl font-habibi font-normal leading-[28px] tracking-[2px] w-[560px]">{testimonials[activeIndex].text}</p>
+          <div className="flex items-center justify-between">
+            <Flex className="justify-around w-full mt-[100px]">
+              <div>
+                <span className="text-typography text-[22px]">{testimonials[activeIndex].name}</span>
+                <p className="font-habibi font-normal text-lg tracking-[2px]">{testimonials[activeIndex].date}</p>
+              </div>
+              <div className="text-yellow-500 text-lg">
+                {"⭐".repeat(testimonials[activeIndex].rating)}
+              </div>
+            </Flex>
 
-        <div className="flex items-center justify-between">
-          <div>
-            <span className="font-bold">{testimonials[activeIndex].name}</span>
-            <p className="text-gray-500">{testimonials[activeIndex].date}</p>
           </div>
-          <div className="text-yellow-500 text-lg">
-            {"⭐".repeat(testimonials[activeIndex].rating)}
-          </div>
-        </div>
 
-        {/* Navigation Arrows */}
-        <div className="flex gap-4 mt-6">
-          <button
-            className="p-2 border rounded-full"
-            onClick={() =>
-              setActiveIndex(
-                activeIndex === 0 ? testimonials.length - 1 : activeIndex - 1
-              )
-            }
-          >
-            <FaArrowLeft />
-          </button>
-          <button
-            className="p-2 border rounded-full"
-            onClick={() =>
-              setActiveIndex(
-                activeIndex === testimonials.length - 1 ? 0 : activeIndex + 1
-              )
-            }
-          >
-            <FaArrowRight />
-          </button>
+          <Flex className="mt-6 justify-end items-end h-[120px]">
+            <div className="space-x-4">
+              <button
+                className="p-2 border rounded-full hover:bg-primary hover:text-white cursor-pointer transition-all"
+                onClick={() =>
+                  setActiveIndex(
+                    activeIndex === 0 ? testimonials.length - 1 : activeIndex - 1
+                  )
+                }
+              >
+                <FaArrowLeft />
+              </button>
+              <button
+                className="p-2 border rounded-full hover:bg-primary hover:text-white cursor-pointer transition-all"
+                onClick={() =>
+                  setActiveIndex(
+                    activeIndex === testimonials.length - 1 ? 0 : activeIndex + 1
+                  )
+                }
+              >
+                <FaArrowRight />
+              </button>
+            </div>
+          </Flex>
         </div>
-      </div>
+      </Flex>
     </Container>
   );
 };
