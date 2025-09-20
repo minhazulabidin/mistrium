@@ -54,7 +54,6 @@ const Products = () => {
 
     return (
         <Container className="mt-[80px] md:mt-[154px]">
-            {/* Heading + Tabs */}
             <Flex className="flex-col md:flex-row justify-between md:items-center mb-[40px] md:mb-[77px] gap-6">
                 <h2 className="text-typography text-[28px] md:text-[40px] font-semibold">
                     Products
