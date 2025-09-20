@@ -4,10 +4,10 @@ import banner from '../../../assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className='mt-[72px]'>
+        <div className='lg:mt-[72px] mt-[50px]'>
             <Container>
-                <Flex>
-                    <div className='w-2/4 space-y-[43px]'>
+                <Flex className="flex-col-reverse lg:flex-row">
+                    <div className='lg:w-2/4 w-full space-y-[43px]'>
                         <h1 className='h1'>Modern Furniture For Modern Living Style</h1>
                         <p className='p'>
                             In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstr ate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
@@ -15,12 +15,12 @@ const Banner = () => {
 
                             graphic design, Lorem ipsum is a place holder text commonly used to demo nstrate the visual form of a document or a typeface without relying ..
                         </p>
-                        <Flex className='gap-[33px]'>
+                        <Flex className='gap-[33px] justify-center lg:justify-start'>
                             <button className='button'>Reagister</button>
                             <button className='button'>Watch Video’s</button>
                         </Flex>
                     </div>
-                    <div className='w-2/4 flex justify-center'>
+                    <div className='lg:w-2/4 w-full flex justify-center'>
                         <img src={banner} alt="" />
                     </div>
                 </Flex>

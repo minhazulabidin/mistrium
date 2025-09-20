@@ -3,7 +3,9 @@
 @plugin "daisyui" {
   themes: light --default;
 }
-
+*{
+    scroll-behavior: smooth;
+}
 @theme {
     --font-gupter: "Gupter", serif;
     --font-habibi: "Habibi", serif;
@@ -12,7 +14,7 @@
 }
 
 .button {
-    @apply outline-none bg-first px-[70px] py-[30px] text-white hover:border-2 hover:bg-white hover:border-first hover:text-first font-bold hover:transition-all border-2;
+    @apply outline-none bg-first lg:px-[70px] px-[40px] lg:py-[30px] py-[15px] text-white hover:border-2 hover:bg-white hover:border-first hover:text-first font-bold hover:transition-all border-2;
 }
 
 .nav-item {
@@ -28,11 +30,11 @@
 }
 
 .h1 {
-    @apply font-habibi text-[65px] font-normal leading-[76px] tracking-[2%];
+    @apply font-habibi lg:text-[65px] text-[40px] font-normal lg:leading-[76px] leading-normal tracking-[2%];
 }
 
 .p {
-    @apply text-xl font-habibi font-normal leading-[28px] tracking-[2%] max-w-[471px];
+    @apply lg:text-xl text-base font-habibi font-normal leading-[28px] tracking-[2%] lg:max-w-[471px] w-full px-1 lg:px-0;
 }
 
 .text-typography {
