@@ -32,7 +32,7 @@ const TrustedClint = () => {
                 <Flex className='justify-between'>
                     {
                         clints.map((clint) => <li 
-                        className='text-secondary text-[45px] font-gupter font-bold leading-[100%] tracking-[2%]'
+                        className='text-second text-[45px] font-gupter font-bold leading-[100%] tracking-[2%]'
                         key={clint?.id}
                         >{clint?.name}</li>)
                     }

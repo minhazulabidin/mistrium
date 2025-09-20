@@ -60,7 +60,7 @@ const Products = () => {
                 <ul className="flex gap-[65px] self-end">
                     <li className="text-typography text-[25px]">Best Selling</li>
                     <li className="text-typography text-[25px]">Most Popular</li>
-                    <li className="flex items-center gap-4 justify-center text-typography text-base text-primary">See All <FaArrowRightLong /></li>
+                    <li className="flex items-center gap-4 justify-center text-typography text-base text-first">See All <FaArrowRightLong /></li>
                 </ul>
             </Flex>
 

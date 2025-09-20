@@ -1,15 +1,18 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Habibi&display=swap');
+@plugin "daisyui" {
+  themes: light --default;
+}
 
 @theme {
     --font-gupter: "Gupter", serif;
     --font-habibi: "Habibi", serif;
-    --color-primary: #C4A586;
-    --color-secondary: #72696A
+    --color-first: #C4A586;
+    --color-second: #72696A
 }
 
 .button {
-    @apply outline-none bg-primary px-[70px] py-[30px] text-white hover:border-2 hover:bg-white hover:border-primary hover:text-primary font-bold hover:transition-all border-2;
+    @apply outline-none bg-first px-[70px] py-[30px] text-white hover:border-2 hover:bg-white hover:border-first hover:text-first font-bold hover:transition-all border-2;
 }
 
 .nav-item {
@@ -55,6 +58,7 @@
 .card-img {
     @apply w-3/5 absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-2/6 h-[400px]
 }
-.carousel-btn{
-    @apply p-2 border rounded-full hover:bg-primary hover:text-white cursor-pointer transition-all;
+
+.carousel-btn {
+    @apply p-2 border rounded-full hover:bg-first hover:text-white cursor-pointer transition-all;
 }

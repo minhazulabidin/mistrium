@@ -10,7 +10,7 @@ const News = () => {
     <Container className="mt-[95px]">
       <div className="grid grid-cols-4 gap-[30px]">
         <div className="col-span-2 space-y-9 justify-end">
-          <button className="py-4 px-10 border border-primary rounded-4xl">See Your Interior Design</button>
+          <button className="py-4 px-10 border border-first rounded-4xl">See Your Interior Design</button>
           <h3 className="font-gupter font-bold text-3xl tracking-[2%] w-[349px]">
             Sign up fo the notification for add a new product’s
           </h3>

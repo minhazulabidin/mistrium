@@ -11,7 +11,7 @@ const Card = ({ product }) => {
                     <button className="card-button">Add to cart <TiShoppingCart className="text-3xl text-[#72696A]" /></button>
                 </div>
                 <h3 className="card-title">{name}</h3>
-                <h4 className="card-price">{updatePrice} <del className="text-secondary">{beforePrice}</del></h4>
+                <h4 className="card-price">{updatePrice} <del className="text-second">{beforePrice}</del></h4>
             </Flex>
             <div className="relative">
                 <img className="card-img" src={img} alt="" />

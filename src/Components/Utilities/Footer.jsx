@@ -1,5 +1,5 @@
 import Container from './Container'
-import fav from '/public/fav.png'
+import fav from '/fav.png'
 import footerImg from "../../assets/Footer.png"
 import Flex from './Flex'
 
@@ -57,7 +57,7 @@ const Footer = () => {
             </nav>
             <hr className='border-[#0000003D] my-6' />
             <Container className="text-center">
-                <h2 className='font-gupter text-lg tracking-[2px] font-bold'>All Copyright Reasurved By  ||  <span className='text-primary'>ISTIAK</span></h2>
+                <h2 className='font-gupter text-lg tracking-[2px] font-bold'>All Copyright Reasurved By  ||  <span className='text-first'>ISTIAK</span></h2>
             </Container>
         </div>
     )
