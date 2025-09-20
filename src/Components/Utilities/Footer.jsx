@@ -37,9 +37,9 @@ const Footer = () => {
         <div className='mt-[100px] mb-3'>
             <nav>
                 <Container>
-                    <Flex className='flex-item'>
-                        <img className='cursor-pointer' src={fav} alt="" />
-                        <ul className='flex gap-10'>
+                    <Flex className='flex-item mx-3 lg:mx-0'>
+                        <img className='cursor-pointer w-[40px] h-[40px]' src={fav} alt="" />
+                        <ul className='flex lg:gap-10 gap-4'>
                             {
                                 navItems.map((item) => <li
                                     className='nav-item'
@@ -49,7 +49,7 @@ const Footer = () => {
                                 </li>)
                             }
                         </ul>
-                        <div className='flex gap-5 text-2xl'>
+                        <div className='lg:flex hidden'>
                             <img src={footerImg} alt="" />
                         </div>
                     </Flex>
@@ -57,7 +57,7 @@ const Footer = () => {
             </nav>
             <hr className='border-[#0000003D] my-6' />
             <Container className="text-center">
-                <h2 className='font-gupter text-lg tracking-[2px] font-bold'>All Copyright Reasurved By  ||  <span className='text-first'>ISTIAK</span></h2>
+                <h2 className='font-gupter text-sm lg:text-lg tracking-normal lg:tracking-[2px] font-bold'>All Copyright Reasurved By  ||  <span className='text-first'>ISTIAK</span></h2>
             </Container>
         </div>
     )
