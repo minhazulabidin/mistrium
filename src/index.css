@@ -38,7 +38,7 @@
 }
 
 .text-typography {
-    @apply font-gupter font-semibold leading-[100%] tracking-[2px];
+    @apply font-gupter font-semibold lg:leading-[100%] leading-normal lg:tracking-[2px] tracking-normal;
 }
 
 .card-body {
